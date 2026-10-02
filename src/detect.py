@@ -1,8 +1,9 @@
+import os
 import cv2
 import numpy as np
 
 # 1. Load the model using OpenCV's DNN module
-model_path = r"C:\Users\prime\Desktop\cropguard\best.tflite"
+model_path = os.path.join(os.path.dirname(__file__), 'models', 'best.tflite')
 net = cv2.dnn.readNetFromTFLite(model_path)
 
 # 2. Start Camera

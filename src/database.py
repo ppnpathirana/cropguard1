@@ -8,7 +8,8 @@ import sqlite3
 import threading
 from datetime import datetime
 
-DB_PATH = os.getenv('DB_PATH', 'data/cropguard.db')
+DEFAULT_DB_PATH = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'cropguard.db')
+DB_PATH = os.getenv('DB_PATH', DEFAULT_DB_PATH)
 _lock = threading.Lock()
 
 

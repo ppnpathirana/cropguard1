@@ -6,7 +6,7 @@ import os
 from collections import Counter
 from treatments import CLASS_NAMES
 
-MODEL_PATH = os.getenv('MODEL_PATH', 'best.tflite')
+MODEL_PATH = os.getenv('MODEL_PATH', os.path.join(os.path.dirname(__file__), 'models', 'best.tflite'))
 MODEL_LOADED = False
 interpreter = None
 input_details = None

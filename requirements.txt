@@ -8,3 +8,4 @@ numpy>=1.26.0
 # TFLite — install ONE of these depending on your platform:
 # tflite-runtime>=2.14.0   ← preferred (smaller, faster)
 # tensorflow>=2.15.0       ← fallback if tflite-runtime unavailable
+pytest>=7.0.0
